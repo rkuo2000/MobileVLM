@@ -51,8 +51,8 @@ def inference_once(args):
     outputs = outputs.strip()
     if outputs.endswith(stop_str):
         outputs = outputs[: -len(stop_str)]
-    print(f"🚀 {model_name}: {outputs.strip()}\n")
-
+    #print(f"🚀 {model_name}: {outputs.strip()}\n")
+    return(outputs.strip())
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
